@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, Mist" />
+  <meta name="keywords" content="Python, http服务器," />
 
 
 
@@ -84,19 +84,16 @@
 
 
 
-<meta name="description" content="title: 利用aiohttp搭建python服务器date: 2016-11-21 21:33tags: Python, http服务器categories: Python
-利用aiohttp搭建python服务器1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950">
+<meta name="description" content="利用aiohttp搭建python服务器123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960# -*- coding: utf8 -*-import logging; logging.basicConfig(level=loggi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="WWLy's space">
-<meta property="og:url" content="wwly.space/2016/11/22/aiohttp服务器/index.html">
+<meta property="og:title" content="利用`aiohttp`搭建`python`服务器">
+<meta property="og:url" content="wwly.space/2016/11/21/aiohttp服务器/index.html">
 <meta property="og:site_name" content="WWLy's space">
-<meta property="og:description" content="title: 利用aiohttp搭建python服务器date: 2016-11-21 21:33tags: Python, http服务器categories: Python
-利用aiohttp搭建python服务器1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950">
-<meta property="og:updated_time" content="2016-11-23T14:27:36.000Z">
+<meta property="og:description" content="利用aiohttp搭建python服务器123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960# -*- coding: utf8 -*-import logging; logging.basicConfig(level=loggi">
+<meta property="og:updated_time" content="2016-11-23T14:40:43.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WWLy's space">
-<meta name="twitter:description" content="title: 利用aiohttp搭建python服务器date: 2016-11-21 21:33tags: Python, http服务器categories: Python
-利用aiohttp搭建python服务器1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950">
+<meta name="twitter:title" content="利用`aiohttp`搭建`python`服务器">
+<meta name="twitter:description" content="利用aiohttp搭建python服务器123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960# -*- coding: utf8 -*-import logging; logging.basicConfig(level=loggi">
 
 
 
@@ -124,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="wwly.space/2016/11/22/aiohttp服务器/"/>
+  <link rel="canonical" href="wwly.space/2016/11/21/aiohttp服务器/"/>
 
 
 
 
 
-  <title>  | WWLy's space </title>
+  <title> 利用`aiohttp`搭建`python`服务器 | WWLy's space </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -274,7 +271,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="wwly.space/2016/11/22/aiohttp服务器/">
+  <link itemprop="mainEntityOfPage" href="wwly.space/2016/11/21/aiohttp服务器/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="WWLy">
@@ -298,7 +295,7 @@
             
             
               
-                
+                利用`aiohttp`搭建`python`服务器
               
             
           </h1>
@@ -311,8 +308,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-22T19:48:28+08:00">
-                2016-11-22
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-21T21:33:00+08:00">
+                2016-11-21
               </time>
             
 
@@ -321,6 +318,24 @@
             
           </span>
 
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -347,8 +362,7 @@
       
 
       
-        <p>title: 利用<code>aiohttp</code>搭建<code>python</code>服务器<br>date: 2016-11-21 21:33<br>tags: Python, http服务器<br>categories: Python</p>
-<h1 id="利用aiohttp搭建python服务器"><a href="#利用aiohttp搭建python服务器" class="headerlink" title="利用aiohttp搭建python服务器"></a>利用<code>aiohttp</code>搭建<code>python</code>服务器</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># -*- coding: utf8 -*-</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> logging; logging.basicConfig(level=logging.INFO)</div><div class="line"></div><div class="line"><span class="keyword">import</span> asyncio, os, json, time</div><div class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime</div><div class="line"></div><div class="line"><span class="keyword">from</span> aiohttp <span class="keyword">import</span> web</div><div class="line"></div><div class="line">shockRecord = <span class="string">""</span></div><div class="line">wwlyRecord = <span class="string">""</span></div><div class="line">result = <span class="string">""</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">(request)</span>:</span></div><div class="line">	<span class="keyword">global</span> shockRecord</div><div class="line">	<span class="keyword">global</span> wwlyRecord</div><div class="line">	<span class="keyword">global</span> result</div><div class="line"></div><div class="line">	text = <span class="string">'%s'</span> % request.match_info[<span class="string">'anything'</span>]</div><div class="line">	<span class="comment"># print(text) </span></div><div class="line">	<span class="keyword">if</span> <span class="string">'shock:'</span> <span class="keyword">in</span> text:</div><div class="line">		tempShock = text[<span class="number">6</span>:]</div><div class="line">		shockRecord = shockRecord + <span class="string">"&lt;/br&gt;"</span> + tempShock</div><div class="line">	<span class="keyword">elif</span> <span class="string">'wwly:'</span> <span class="keyword">in</span> text:</div><div class="line">		tempWwly = text[<span class="number">5</span>:]</div><div class="line">		wwlyRecord = wwlyRecord + <span class="string">"&lt;/br&gt;"</span> + tempWwly</div><div class="line">	<span class="keyword">else</span>:</div><div class="line">		result = result + <span class="string">"&lt;/br&gt;"</span> + text</div><div class="line">	<span class="comment"># print(result)</span></div><div class="line">	<span class="comment"># print(request.url)</span></div><div class="line">	htmlStr = <span class="string">"""</span></div><div class="line">	&lt;h3&gt;Record&lt;/h3&gt; </div><div class="line">	&lt;div style="width: 200; float: left;"&gt;</div><div class="line">	&lt;h4&gt;shock:&lt;/h4&gt;</div><div class="line">	&lt;p style="font-size: 6px;"&gt;%s&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div style="width: 200; float: left;"&gt;</div><div class="line">	&lt;h4&gt;wwly:&lt;/h4&gt;</div><div class="line">	&lt;p style="font-size: 6px;"&gt;%s&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div style="width: 200; float: left;"&gt;</div><div class="line">	&lt;h4&gt;未知:&lt;/h4&gt;</div><div class="line">	&lt;p style="font-size: 6px;"&gt;%s&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	""" % (shockRecord, wwlyRecord, result)</div><div class="line">	<span class="comment"># htmlStr = htmlStr + ''</span></div><div class="line">	<span class="keyword">return</span> web.Response(body=htmlStr.encode(<span class="string">'utf-8'</span>), content_type=<span class="string">'text/html'</span>)</div><div class="line"></div><div class="line"><span class="meta">@asyncio.coroutine</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">init</span><span class="params">(loop)</span>:</span></div><div class="line">	app = web.Application(loop=loop)</div><div class="line">	app.router.add_route(<span class="string">'GET'</span>, <span class="string">'/&#123;anything&#125;'</span>, index)</div><div class="line">	app.router.add_route(<span class="string">'GET'</span>, <span class="string">'/*'</span>, index)</div><div class="line">	srv = <span class="keyword">yield</span> <span class="keyword">from</span> loop.create_server(app.make_handler(), <span class="string">'0.0.0.0'</span>, <span class="number">9000</span>)</div><div class="line">	logging.info(<span class="string">'server started at http://0.0.0.0:9000...'</span>)</div><div class="line">	<span class="keyword">return</span> srv</div><div class="line"></div><div class="line">loop = asyncio.get_event_loop()</div><div class="line">loop.run_until_complete(init(loop))</div><div class="line">loop.run_forever()</div></pre></td></tr></table></figure>
+        <h1 id="利用aiohttp搭建python服务器"><a href="#利用aiohttp搭建python服务器" class="headerlink" title="利用aiohttp搭建python服务器"></a>利用<code>aiohttp</code>搭建<code>python</code>服务器</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># -*- coding: utf8 -*-</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> logging; logging.basicConfig(level=logging.INFO)</div><div class="line"></div><div class="line"><span class="keyword">import</span> asyncio, os, json, time</div><div class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime</div><div class="line"></div><div class="line"><span class="keyword">from</span> aiohttp <span class="keyword">import</span> web</div><div class="line"></div><div class="line">shockRecord = <span class="string">""</span></div><div class="line">wwlyRecord = <span class="string">""</span></div><div class="line">result = <span class="string">""</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">(request)</span>:</span></div><div class="line">	<span class="keyword">global</span> shockRecord</div><div class="line">	<span class="keyword">global</span> wwlyRecord</div><div class="line">	<span class="keyword">global</span> result</div><div class="line"></div><div class="line">	text = <span class="string">'%s'</span> % request.match_info[<span class="string">'anything'</span>]</div><div class="line">	<span class="comment"># print(text) </span></div><div class="line">	<span class="keyword">if</span> <span class="string">'shock:'</span> <span class="keyword">in</span> text:</div><div class="line">		tempShock = text[<span class="number">6</span>:]</div><div class="line">		shockRecord = shockRecord + <span class="string">"&lt;/br&gt;"</span> + tempShock</div><div class="line">	<span class="keyword">elif</span> <span class="string">'wwly:'</span> <span class="keyword">in</span> text:</div><div class="line">		tempWwly = text[<span class="number">5</span>:]</div><div class="line">		wwlyRecord = wwlyRecord + <span class="string">"&lt;/br&gt;"</span> + tempWwly</div><div class="line">	<span class="keyword">else</span>:</div><div class="line">		result = result + <span class="string">"&lt;/br&gt;"</span> + text</div><div class="line">	<span class="comment"># print(result)</span></div><div class="line">	<span class="comment"># print(request.url)</span></div><div class="line">	htmlStr = <span class="string">"""</span></div><div class="line">	&lt;h3&gt;Record&lt;/h3&gt; </div><div class="line">	&lt;div style="width: 200; float: left;"&gt;</div><div class="line">	&lt;h4&gt;shock:&lt;/h4&gt;</div><div class="line">	&lt;p style="font-size: 6px;"&gt;%s&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div style="width: 200; float: left;"&gt;</div><div class="line">	&lt;h4&gt;wwly:&lt;/h4&gt;</div><div class="line">	&lt;p style="font-size: 6px;"&gt;%s&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div style="width: 200; float: left;"&gt;</div><div class="line">	&lt;h4&gt;未知:&lt;/h4&gt;</div><div class="line">	&lt;p style="font-size: 6px;"&gt;%s&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	""" % (shockRecord, wwlyRecord, result)</div><div class="line">	<span class="comment"># htmlStr = htmlStr + ''</span></div><div class="line">	<span class="keyword">return</span> web.Response(body=htmlStr.encode(<span class="string">'utf-8'</span>), content_type=<span class="string">'text/html'</span>)</div><div class="line"></div><div class="line"><span class="meta">@asyncio.coroutine</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">init</span><span class="params">(loop)</span>:</span></div><div class="line">	app = web.Application(loop=loop)</div><div class="line">	app.router.add_route(<span class="string">'GET'</span>, <span class="string">'/&#123;anything&#125;'</span>, index)</div><div class="line">	app.router.add_route(<span class="string">'GET'</span>, <span class="string">'/*'</span>, index)</div><div class="line">	srv = <span class="keyword">yield</span> <span class="keyword">from</span> loop.create_server(app.make_handler(), <span class="string">'0.0.0.0'</span>, <span class="number">9000</span>)</div><div class="line">	logging.info(<span class="string">'server started at http://0.0.0.0:9000...'</span>)</div><div class="line">	<span class="keyword">return</span> srv</div><div class="line"></div><div class="line">loop = asyncio.get_event_loop()</div><div class="line">loop.run_until_complete(init(loop))</div><div class="line">loop.run_forever()</div></pre></td></tr></table></figure>
 <p>上面的代码实现了解析对方的<code>GET</code>请求, 可以把想传递的内容放在<code>url</code>链接后面, 同时会把内容记录在全局变量中并展示出来.</p>
 <p>其中:<br><code>app.router.add_route(&#39;GET&#39;, &#39;/{anything}&#39;, index)</code><br>为了把所有的<code>url</code>映射到同一个<code>index</code>函数上.</p>
 <p><code>app.make_handler(), &#39;0.0.0.0&#39;, 9000</code><br>一开始我绑定的本地ip地址<code>127.0.0.1</code>, 发现本机可以访问, 但是外网不能通过本机ip进行访问. 后来尝试绑定<code>0.0.0.0</code>, 实现了外网通过ip地址访问本地<code>python</code>服务器.</p>
@@ -395,13 +409,19 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Python-http服务器/" rel="tag"># Python, http服务器</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/22/init hexo/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2016/11/21/init hexo/" rel="next" title="搭建hexo博客">
+                <i class="fa fa-chevron-left"></i> 搭建hexo博客
               </a>
             
           </div>
@@ -505,7 +525,21 @@
           </div>
 
           
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
