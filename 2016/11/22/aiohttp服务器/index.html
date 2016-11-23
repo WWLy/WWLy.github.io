@@ -84,22 +84,19 @@
 
 
 
-<meta name="description" content="title: 搭建hexo博客date: 2016-11-21 21:33tags: 随笔categories: 随笔
-搭建hexo博客在之前就萌生了建立博客网站的念头, 之前使用WordPress在新浪云上搭建过一次, 但是效果并不理想. 后来意外发现hexo静态博客工具, 又了解到next这个hexo主题, 于是便再一次在github上搭建了此博客. 
-由于之前搭建过几次, 所以这次搭建的很顺">
+<meta name="description" content="title: 利用aiohttp搭建python服务器date: 2016-11-21 21:33tags: Python, http服务器categories: Python
+利用aiohttp搭建python服务器1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950">
 <meta property="og:type" content="article">
 <meta property="og:title" content="WWLy's space">
-<meta property="og:url" content="wwly.space/2016/11/22/init hexo/index.html">
+<meta property="og:url" content="wwly.space/2016/11/22/aiohttp服务器/index.html">
 <meta property="og:site_name" content="WWLy's space">
-<meta property="og:description" content="title: 搭建hexo博客date: 2016-11-21 21:33tags: 随笔categories: 随笔
-搭建hexo博客在之前就萌生了建立博客网站的念头, 之前使用WordPress在新浪云上搭建过一次, 但是效果并不理想. 后来意外发现hexo静态博客工具, 又了解到next这个hexo主题, 于是便再一次在github上搭建了此博客. 
-由于之前搭建过几次, 所以这次搭建的很顺">
-<meta property="og:updated_time" content="2016-11-23T14:28:39.000Z">
+<meta property="og:description" content="title: 利用aiohttp搭建python服务器date: 2016-11-21 21:33tags: Python, http服务器categories: Python
+利用aiohttp搭建python服务器1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950">
+<meta property="og:updated_time" content="2016-11-23T14:27:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WWLy's space">
-<meta name="twitter:description" content="title: 搭建hexo博客date: 2016-11-21 21:33tags: 随笔categories: 随笔
-搭建hexo博客在之前就萌生了建立博客网站的念头, 之前使用WordPress在新浪云上搭建过一次, 但是效果并不理想. 后来意外发现hexo静态博客工具, 又了解到next这个hexo主题, 于是便再一次在github上搭建了此博客. 
-由于之前搭建过几次, 所以这次搭建的很顺">
+<meta name="twitter:description" content="title: 利用aiohttp搭建python服务器date: 2016-11-21 21:33tags: Python, http服务器categories: Python
+利用aiohttp搭建python服务器1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950">
 
 
 
@@ -127,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="wwly.space/2016/11/22/init hexo/"/>
+  <link rel="canonical" href="wwly.space/2016/11/22/aiohttp服务器/"/>
 
 
 
@@ -277,7 +274,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="wwly.space/2016/11/22/init hexo/">
+  <link itemprop="mainEntityOfPage" href="wwly.space/2016/11/22/aiohttp服务器/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="WWLy">
@@ -350,10 +347,12 @@
       
 
       
-        <p>title: 搭建hexo博客<br>date: 2016-11-21 21:33<br>tags: 随笔<br>categories: 随笔</p>
-<h1 id="搭建hexo博客"><a href="#搭建hexo博客" class="headerlink" title="搭建hexo博客"></a>搭建hexo博客</h1><p>在之前就萌生了建立博客网站的念头, 之前使用<code>WordPress</code>在新浪云上搭建过一次, 但是效果并不理想. 后来意外发现<code>hexo</code>静态博客工具, 又了解到<code>next</code>这个<code>hexo</code>主题, 于是便再一次在github上搭建了此博客. </p>
-<p>由于之前搭建过几次, 所以这次搭建的很顺利, 按照文档修改成自己喜欢的样式. 这次我把源码单独作为一个仓库上传至<code>github</code>, 以免有失.</p>
-<p>谨记: 当你在嘲笑一亿是一个小目标时, 你是在嘲笑谁? </p>
+        <p>title: 利用<code>aiohttp</code>搭建<code>python</code>服务器<br>date: 2016-11-21 21:33<br>tags: Python, http服务器<br>categories: Python</p>
+<h1 id="利用aiohttp搭建python服务器"><a href="#利用aiohttp搭建python服务器" class="headerlink" title="利用aiohttp搭建python服务器"></a>利用<code>aiohttp</code>搭建<code>python</code>服务器</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># -*- coding: utf8 -*-</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> logging; logging.basicConfig(level=logging.INFO)</div><div class="line"></div><div class="line"><span class="keyword">import</span> asyncio, os, json, time</div><div class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime</div><div class="line"></div><div class="line"><span class="keyword">from</span> aiohttp <span class="keyword">import</span> web</div><div class="line"></div><div class="line">shockRecord = <span class="string">""</span></div><div class="line">wwlyRecord = <span class="string">""</span></div><div class="line">result = <span class="string">""</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">(request)</span>:</span></div><div class="line">	<span class="keyword">global</span> shockRecord</div><div class="line">	<span class="keyword">global</span> wwlyRecord</div><div class="line">	<span class="keyword">global</span> result</div><div class="line"></div><div class="line">	text = <span class="string">'%s'</span> % request.match_info[<span class="string">'anything'</span>]</div><div class="line">	<span class="comment"># print(text) </span></div><div class="line">	<span class="keyword">if</span> <span class="string">'shock:'</span> <span class="keyword">in</span> text:</div><div class="line">		tempShock = text[<span class="number">6</span>:]</div><div class="line">		shockRecord = shockRecord + <span class="string">"&lt;/br&gt;"</span> + tempShock</div><div class="line">	<span class="keyword">elif</span> <span class="string">'wwly:'</span> <span class="keyword">in</span> text:</div><div class="line">		tempWwly = text[<span class="number">5</span>:]</div><div class="line">		wwlyRecord = wwlyRecord + <span class="string">"&lt;/br&gt;"</span> + tempWwly</div><div class="line">	<span class="keyword">else</span>:</div><div class="line">		result = result + <span class="string">"&lt;/br&gt;"</span> + text</div><div class="line">	<span class="comment"># print(result)</span></div><div class="line">	<span class="comment"># print(request.url)</span></div><div class="line">	htmlStr = <span class="string">"""</span></div><div class="line">	&lt;h3&gt;Record&lt;/h3&gt; </div><div class="line">	&lt;div style="width: 200; float: left;"&gt;</div><div class="line">	&lt;h4&gt;shock:&lt;/h4&gt;</div><div class="line">	&lt;p style="font-size: 6px;"&gt;%s&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div style="width: 200; float: left;"&gt;</div><div class="line">	&lt;h4&gt;wwly:&lt;/h4&gt;</div><div class="line">	&lt;p style="font-size: 6px;"&gt;%s&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div style="width: 200; float: left;"&gt;</div><div class="line">	&lt;h4&gt;未知:&lt;/h4&gt;</div><div class="line">	&lt;p style="font-size: 6px;"&gt;%s&lt;/p&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	""" % (shockRecord, wwlyRecord, result)</div><div class="line">	<span class="comment"># htmlStr = htmlStr + ''</span></div><div class="line">	<span class="keyword">return</span> web.Response(body=htmlStr.encode(<span class="string">'utf-8'</span>), content_type=<span class="string">'text/html'</span>)</div><div class="line"></div><div class="line"><span class="meta">@asyncio.coroutine</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">init</span><span class="params">(loop)</span>:</span></div><div class="line">	app = web.Application(loop=loop)</div><div class="line">	app.router.add_route(<span class="string">'GET'</span>, <span class="string">'/&#123;anything&#125;'</span>, index)</div><div class="line">	app.router.add_route(<span class="string">'GET'</span>, <span class="string">'/*'</span>, index)</div><div class="line">	srv = <span class="keyword">yield</span> <span class="keyword">from</span> loop.create_server(app.make_handler(), <span class="string">'0.0.0.0'</span>, <span class="number">9000</span>)</div><div class="line">	logging.info(<span class="string">'server started at http://0.0.0.0:9000...'</span>)</div><div class="line">	<span class="keyword">return</span> srv</div><div class="line"></div><div class="line">loop = asyncio.get_event_loop()</div><div class="line">loop.run_until_complete(init(loop))</div><div class="line">loop.run_forever()</div></pre></td></tr></table></figure>
+<p>上面的代码实现了解析对方的<code>GET</code>请求, 可以把想传递的内容放在<code>url</code>链接后面, 同时会把内容记录在全局变量中并展示出来.</p>
+<p>其中:<br><code>app.router.add_route(&#39;GET&#39;, &#39;/{anything}&#39;, index)</code><br>为了把所有的<code>url</code>映射到同一个<code>index</code>函数上.</p>
+<p><code>app.make_handler(), &#39;0.0.0.0&#39;, 9000</code><br>一开始我绑定的本地ip地址<code>127.0.0.1</code>, 发现本机可以访问, 但是外网不能通过本机ip进行访问. 后来尝试绑定<code>0.0.0.0</code>, 实现了外网通过ip地址访问本地<code>python</code>服务器.</p>
+<p><code>web.Response(body=htmlStr.encode(&#39;utf-8&#39;), content_type=&#39;text/html&#39;)</code><br><code>text/html</code>为了设置响应体格式, 否则对方一访问ip地址就会下载文件.</p>
 
       
     </div>
@@ -401,15 +400,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/11/22/init hexo/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/22/aiohttp服务器/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -563,7 +562,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建hexo博客"><span class="nav-number">1.</span> <span class="nav-text">搭建hexo博客</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#利用aiohttp搭建python服务器"><span class="nav-number">1.</span> <span class="nav-text">利用aiohttp搭建python服务器</span></a></li></ol></div>
             
 
           </div>
