@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[协程]]></title>
-      <url>%2F2016%2F11%2F24%2Finit%20hexo%E7%9A%84%E5%89%AF%E6%9C%AC%2F</url>
+      <url>%2F2016%2F11%2F24%2F%E5%8D%8F%E7%A8%8B%2F</url>
       <content type="text"><![CDATA[123456789101112131415161718192021222324# -*- coding: utf8 -*-# 消费者def consumer(): r = "" while True: n = yield r if not n: return print("[CONSUMER] Consuming %s..." % n) r = "200 OK"# 生产者def produce(c): c.send(None) n = 0 while n &lt; 5: n = n + 1 print("[PRODUCER] Producing %s..." % n) r = c.send(n) print("[PRODUCER] Consumer return: %s" % r) c.close()c = consumer() produce(c) 每当执行send()函数的时候会来到consumer中yield的下一条语句每当执行到yield时会停住执行produce中send的下一条语句 1234567891011121314def countdown(n): print("Counting down from %d" % n) while n &gt;= 0: newValue = yield n if newValue is not None: n = newValue else: n -= 1c = countdown(5)for x in c: print(x) if x == 5: c.send(3) 输出结果: 5 2 1 0 send给generator的value会成为当前yield的结果 且send的返回结果是下一个yield的结果, 即此处c.send(3)会返回3]]></content>
     </entry>
 
