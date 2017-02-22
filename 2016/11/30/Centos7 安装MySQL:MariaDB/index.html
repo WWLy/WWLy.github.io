@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="随笔," />
+  <meta name="keywords" content="Linux, Mysql," />
 
 
 
@@ -84,22 +84,28 @@
 
 
 
-<meta name="description" content="搭建hexo博客在之前就萌生了建立博客网站的念头, 之前使用WordPress在新浪云上搭建过一次, 但是效果并不理想. 后来意外发现hexo静态博客工具, 又了解到next这个hexo主题, 于是便再一次在github上搭建了此博客. 
-由于之前搭建过几次, 所以这次搭建的很顺利, 按照文档修改成自己喜欢的样式. 这次我把源码单独作为一个仓库上传至github, 以免有失.
-谨记: 当你在嘲笑一">
+<meta name="description" content="Centos7 安装MySQL/MariaDB
+MariaDB数据库管理系统是MySQL的一个分支.在CentOS7中MySQL被MariaDB所代替.
+
+一开始安装的时候执行的yum install mysql, 发现装上之后不能启动, 后来发现在CentOS7中MySQL被MariaDB所代替.然后再删除mysql, 重新安装MariaDB, 但是神奇的是还是不能启动.
+最后找到解决方案:">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建hexo博客">
-<meta property="og:url" content="wwly.space/2016/11/21/init hexo/index.html">
+<meta property="og:title" content="Centos7 安装MySQL/MariaDB">
+<meta property="og:url" content="wwly.space/2016/11/30/Centos7 安装MySQL:MariaDB/index.html">
 <meta property="og:site_name" content="WWLy's space">
-<meta property="og:description" content="搭建hexo博客在之前就萌生了建立博客网站的念头, 之前使用WordPress在新浪云上搭建过一次, 但是效果并不理想. 后来意外发现hexo静态博客工具, 又了解到next这个hexo主题, 于是便再一次在github上搭建了此博客. 
-由于之前搭建过几次, 所以这次搭建的很顺利, 按照文档修改成自己喜欢的样式. 这次我把源码单独作为一个仓库上传至github, 以免有失.
-谨记: 当你在嘲笑一">
-<meta property="og:updated_time" content="2016-11-23T14:40:33.000Z">
+<meta property="og:description" content="Centos7 安装MySQL/MariaDB
+MariaDB数据库管理系统是MySQL的一个分支.在CentOS7中MySQL被MariaDB所代替.
+
+一开始安装的时候执行的yum install mysql, 发现装上之后不能启动, 后来发现在CentOS7中MySQL被MariaDB所代替.然后再删除mysql, 重新安装MariaDB, 但是神奇的是还是不能启动.
+最后找到解决方案:">
+<meta property="og:updated_time" content="2016-11-30T09:10:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="搭建hexo博客">
-<meta name="twitter:description" content="搭建hexo博客在之前就萌生了建立博客网站的念头, 之前使用WordPress在新浪云上搭建过一次, 但是效果并不理想. 后来意外发现hexo静态博客工具, 又了解到next这个hexo主题, 于是便再一次在github上搭建了此博客. 
-由于之前搭建过几次, 所以这次搭建的很顺利, 按照文档修改成自己喜欢的样式. 这次我把源码单独作为一个仓库上传至github, 以免有失.
-谨记: 当你在嘲笑一">
+<meta name="twitter:title" content="Centos7 安装MySQL/MariaDB">
+<meta name="twitter:description" content="Centos7 安装MySQL/MariaDB
+MariaDB数据库管理系统是MySQL的一个分支.在CentOS7中MySQL被MariaDB所代替.
+
+一开始安装的时候执行的yum install mysql, 发现装上之后不能启动, 后来发现在CentOS7中MySQL被MariaDB所代替.然后再删除mysql, 重新安装MariaDB, 但是神奇的是还是不能启动.
+最后找到解决方案:">
 
 
 
@@ -127,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="wwly.space/2016/11/21/init hexo/"/>
+  <link rel="canonical" href="wwly.space/2016/11/30/Centos7 安装MySQL:MariaDB/"/>
 
 
 
 
 
-  <title> 搭建hexo博客 | WWLy's space </title>
+  <title> Centos7 安装MySQL/MariaDB | WWLy's space </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -277,7 +283,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="wwly.space/2016/11/21/init hexo/">
+  <link itemprop="mainEntityOfPage" href="wwly.space/2016/11/30/Centos7 安装MySQL:MariaDB/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="WWLy">
@@ -301,7 +307,7 @@
             
             
               
-                搭建hexo博客
+                Centos7 安装MySQL/MariaDB
               
             
           </h1>
@@ -314,8 +320,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-21T21:33:00+08:00">
-                2016-11-21
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-30T16:48:00+08:00">
+                2016-11-30
               </time>
             
 
@@ -333,8 +339,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
                   </a>
                 </span>
 
@@ -368,9 +374,37 @@
       
 
       
-        <h1 id="搭建hexo博客"><a href="#搭建hexo博客" class="headerlink" title="搭建hexo博客"></a>搭建hexo博客</h1><p>在之前就萌生了建立博客网站的念头, 之前使用<code>WordPress</code>在新浪云上搭建过一次, 但是效果并不理想. 后来意外发现<code>hexo</code>静态博客工具, 又了解到<code>next</code>这个<code>hexo</code>主题, 于是便再一次在github上搭建了此博客. </p>
-<p>由于之前搭建过几次, 所以这次搭建的很顺利, 按照文档修改成自己喜欢的样式. 这次我把源码单独作为一个仓库上传至<code>github</code>, 以免有失.</p>
-<p>谨记: 当你在嘲笑一亿是一个小目标时, 你是在嘲笑谁? </p>
+        <h1 id="Centos7-安装MySQL-MariaDB"><a href="#Centos7-安装MySQL-MariaDB" class="headerlink" title="Centos7 安装MySQL/MariaDB"></a>Centos7 安装MySQL/MariaDB</h1><blockquote>
+<p><code>MariaDB</code>数据库管理系统是<code>MySQL</code>的一个分支.<br>在<code>CentOS7</code>中<code>MySQL</code>被<code>MariaDB</code>所代替.</p>
+</blockquote>
+<p>一开始安装的时候执行的<code>yum install mysql</code>, 发现装上之后不能启动, 后来发现在<code>CentOS7</code>中<code>MySQL</code>被<code>MariaDB</code>所代替.<br>然后再删除<code>mysql</code>, 重新安装<code>MariaDB</code>, 但是神奇的是还是不能启动.</p>
+<p>最后找到解决方案:</p>
+<ol>
+<li>删除<code>/var/lib/mysql</code>文件夹</li>
+<li>删除<code>/etc/my.cnf</code>文件夹</li>
+<li>卸载<code>yum remove mariadb*</code></li>
+<li>重装<code>yum -y install mariadb*</code></li>
+<li>启动<code>systemctl start mariadb.service</code></li>
+</ol>
+<p>终于不报错了!</p>
+<hr>
+<p>接着再进行一些初始化配置</p>
+<ol>
+<li>设置开机启动<br><code>systemctl enable mariadb</code></li>
+<li>设置密码<br><code>mysql_secure_installation</code></li>
+</ol>
+<ul>
+<li>会提示输入密码: <code>Enter current password for root (enter for none):</code> 此时是没有密码的, 直接回车</li>
+<li>然后设置密码<br><code>Set root password? [Y/n]</code><br><code>New password:</code><br><code>Re-enter new password:</code></li>
+</ul>
+<ol>
+<li>是否删除匿名用户<br><code>Remove anonymous users? [Y/n]</code>  直接回车</li>
+<li>是否禁止root远程登录<br><code>Disallow root login remotely? [Y/n]</code>  直接回车</li>
+<li>是否删除test数据库<br><code>Remove test database and access to it? [Y/n]</code>  直接回车</li>
+<li>是否重新加载权限表<br><code>Reload privilege tables now? [Y/n]</code>  直接回车</li>
+</ol>
+<p>接下来可以测试登录<br><code>mysql -uroot -pnewpassword</code></p>
+<p>Over!</p>
 
       
     </div>
@@ -415,7 +449,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/随笔/" rel="tag"># 随笔</a>
+            <a href="/tags/Linux-Mysql/" rel="tag"># Linux, Mysql</a>
           
         </div>
       
@@ -424,15 +458,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/11/24/协程/" rel="next" title="协程">
+                <i class="fa fa-chevron-left"></i> 协程
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/23/aiohttp服务器/" rel="prev" title="利用aiohttp搭建python服务器">
-                利用aiohttp搭建python服务器 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -600,7 +634,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建hexo博客"><span class="nav-number">1.</span> <span class="nav-text">搭建hexo博客</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Centos7-安装MySQL-MariaDB"><span class="nav-number">1.</span> <span class="nav-text">Centos7 安装MySQL/MariaDB</span></a></li></ol></div>
             
 
           </div>

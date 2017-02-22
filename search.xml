@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Centos7 安装MySQL/MariaDB]]></title>
+      <url>%2F2016%2F11%2F30%2FCentos7%20%E5%AE%89%E8%A3%85MySQL%3AMariaDB%2F</url>
+      <content type="text"><![CDATA[Centos7 安装MySQL/MariaDB MariaDB数据库管理系统是MySQL的一个分支.在CentOS7中MySQL被MariaDB所代替. 一开始安装的时候执行的yum install mysql, 发现装上之后不能启动, 后来发现在CentOS7中MySQL被MariaDB所代替.然后再删除mysql, 重新安装MariaDB, 但是神奇的是还是不能启动. 最后找到解决方案: 删除/var/lib/mysql文件夹 删除/etc/my.cnf文件夹 卸载yum remove mariadb* 重装yum -y install mariadb* 启动systemctl start mariadb.service 终于不报错了! 接着再进行一些初始化配置 设置开机启动systemctl enable mariadb 设置密码mysql_secure_installation 会提示输入密码: Enter current password for root (enter for none): 此时是没有密码的, 直接回车 然后设置密码Set root password? [Y/n]New password:Re-enter new password: 是否删除匿名用户Remove anonymous users? [Y/n] 直接回车 是否禁止root远程登录Disallow root login remotely? [Y/n] 直接回车 是否删除test数据库Remove test database and access to it? [Y/n] 直接回车 是否重新加载权限表Reload privilege tables now? [Y/n] 直接回车 接下来可以测试登录mysql -uroot -pnewpassword Over!]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[协程]]></title>
       <url>%2F2016%2F11%2F24%2F%E5%8D%8F%E7%A8%8B%2F</url>
       <content type="text"><![CDATA[123456789101112131415161718192021222324# -*- coding: utf8 -*-# 消费者def consumer(): r = "" while True: n = yield r if not n: return print("[CONSUMER] Consuming %s..." % n) r = "200 OK"# 生产者def produce(c): c.send(None) n = 0 while n &lt; 5: n = n + 1 print("[PRODUCER] Producing %s..." % n) r = c.send(n) print("[PRODUCER] Consumer return: %s" % r) c.close()c = consumer() produce(c) 每当执行send()函数的时候会来到consumer中yield的下一条语句每当执行到yield时会停住执行produce中send的下一条语句 1234567891011121314def countdown(n): print("Counting down from %d" % n) while n &gt;= 0: newValue = yield n if newValue is not None: n = newValue else: n -= 1c = countdown(5)for x in c: print(x) if x == 5: c.send(3) 输出结果: 5 2 1 0 send给generator的value会成为当前yield的结果 且send的返回结果是下一个yield的结果, 即此处c.send(3)会返回3]]></content>
